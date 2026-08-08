@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamPlatform</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="exam-header">
+        <h1>ExamPlatform</h1>
+
+        <div class="timer">
+            Time Left:
+            <span id="timer">30:00</span>
+        </div>
+    </header>
+
+
+    <main class="exam-container">
+
+        <section class="question-section">
+
+            <div class="question-number">
+                Question 1 of 5
+            </div>
+
+            <h2>
+                Which data structure follows the FIFO principle?
+            </h2>
+
+            <div class="options">
+
+                <label>
+                    <input type="radio" name="answer" value="A">
+                    A. Stack
+                </label>
+
+                <label>
+                    <input type="radio" name="answer" value="B">
+                    B. Queue
+                </label>
+
+                <label>
+                    <input type="radio" name="answer" value="C">
+                    C. Tree
+                </label>
+
+                <label>
+                    <input type="radio" name="answer" value="D">
+                    D. Graph
+                </label>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="previousBtn">
+                    Previous
+                </button>
+
+                <button id="nextBtn">
+                    Next
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <aside class="question-panel">
+
+            <h3>Questions</h3>
+
+            <div class="question-grid">
+
+                <button class="current">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+
+            </div>
+
+            <button id="submitBtn" class="submit-btn">
+                Submit Exam
+            </button>
+
+        </aside>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='js/exam.js') }}"></script>
+
+</body>
+</html>

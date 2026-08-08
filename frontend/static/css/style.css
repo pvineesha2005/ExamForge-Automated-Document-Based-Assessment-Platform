@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.exam-header {
+    height: 70px;
+    background: #1f2937;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.exam-header h1 {
+    font-size: 24px;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.exam-container {
+    display: flex;
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.question-section {
+    background: white;
+
+    flex: 1;
+
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.question-number {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.question-section h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.options label {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.options label:hover {
+    background: #f3f4f6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+
+.buttons button,
+.submit-btn {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.question-panel {
+    width: 250px;
+
+    background: white;
+
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.question-panel h3 {
+    margin-bottom: 20px;
+}
+
+.question-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.question-grid button {
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    background: white;
+
+    cursor: pointer;
+}
+
+.question-grid .current {
+    background: #1f2937;
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+
+    margin-top: 30px;
+
+    background: #dc2626;
+    color: white;
+}

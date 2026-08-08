@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ExamPlatform - Upload Document</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        .upload-box {
+            background: white;
+
+            width: 500px;
+
+            padding: 40px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 25px;
+        }
+
+        button {
+            padding: 12px 30px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: #1f2937;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #111827;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="upload-box">
+
+        <h1>ExamPlatform</h1>
+
+        <p>
+            Upload your exam preparation document
+        </p>
+
+        <form
+            action="/upload"
+            method="POST"
+            enctype="multipart/form-data"
+        >
+
+            <input
+                type="file"
+                name="document"
+                accept=".pdf"
+                required
+            >
+
+            <br>
+
+            <button type="submit">
+                Upload Document
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
