@@ -7,8 +7,10 @@ The current implementation supports PDF upload, document processing, question ex
 The planned examination workflow allows users to select the number of questions and time per question. Based on these preferences, the system will randomly select the required questions and automatically calculate the total examination duration.
 
 Key Features
+
 📄 PDF Document Upload
 Upload question-containing PDF documents for automated processing.
+
 🔍 Automated Question Extraction
 Identifies individual questions from the uploaded document.
 📝 Option Extraction
