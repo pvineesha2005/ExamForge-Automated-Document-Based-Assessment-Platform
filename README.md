@@ -13,33 +13,50 @@ Upload question-containing PDF documents for automated processing.
 
 🔍 Automated Question Extraction
 Identifies individual questions from the uploaded document.
+
 📝 Option Extraction
 Extracts answer choices associated with detected questions.
+
 🖼️ Figure and Graph Preservation
 Preserves images, diagrams, graphs, and other visual elements associated with questions.
+
 🗂️ Question Bank Creation
 Converts extracted questions into a structured question bank.
+
 🎲 Random Question Selection
 Randomly selects questions from the available question bank.
+
 💻 Web-Based Interface
 Provides a browser-based interface for uploading documents and viewing generated questions.
+
 ⚙️ Customizable Examination — In Development
 Users will be able to select the number of questions and time allocated per question.
+
 ⏱️ Adaptive Examination Timer — Planned
 The total examination duration will be automatically calculated from the selected number of questions and time per question.
+
 📊 Evaluation and Results — Planned
 Future versions will include answer evaluation, score calculation, result generation, and performance analysis.
+
 Development Status
 
 ExamForge is currently under development.
 
 Implemented
 
+
 ✅ PDF upload
+
 ✅ Document processing
+
 ✅ Question extraction
+
 ✅ Option extraction
+
 ✅ Image/graph preservation
+
 ✅ Question-bank creation
+
 ✅ Random question selection
+
 ✅ Browser-based question display
